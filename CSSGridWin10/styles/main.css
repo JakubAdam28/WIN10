@@ -1,0 +1,64 @@
+.start-panel {
+display: grid;
+grid-template-columns: 50px minmax(170px, auto) 1fr;
+
+}
+.start-panel__icons {
+display: grid;
+grid-template-rows: 1fr;
+}
+.start-panel__grid {
+display: grid;
+grid-template-areas: 
+"office fun"
+"office fun"
+"web fun";
+grid-auto-rows: auto;
+
+}
+.apps--office {
+grid-area: office;
+}
+.apps--web {
+grid-area: web;
+}
+.apps--other {
+grid-area: fun;
+}
+.apps__grid {
+display: grid;
+grid-template-columns: repeat(6, 50px) ;
+grid-auto-rows: 50px;
+gap: 5px;
+}
+.app--g2x2 {
+grid-row: span 2;
+grid-column: span 2;
+}
+.app--g2x1 {
+grid: span 2 / span 1;
+}
+.app--g1x2 {
+grid-column-end: span 2;
+
+}
+.app--off-3 {
+
+
+}
+.app--off-4 {
+
+}
+.app--off-5 {
+grid-row-start: 1;
+grid-column-start:5;
+}
+.app--in-3 {
+
+}
+.app--fun-2 {
+
+}
+.app--fun-3 {
+
+}
